@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>NY Time Search</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbotron bg-primary text-light">
+            <h1 class="text-center">
+          <i class="fa fa-newspaper-o"></i>
+                <strong>New York Times Search</strong>
+            </h1>
+        </div>
+        <div class="row mb-3">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header text-primary">
+          <i class="fa fa-search"></i>
+                    <strong>Search Terms</strong>
+                        <div class="card-body">
+        <form>
+            <div class="form-group">
+                <label for="searchTerm">Search Term:</label>
+                <input type="text" class="form-control" id="searchTerm" placeholder="Current Events">
+            </div>
+            <div class="form-group">
+                <label for="numberRecords">Number of Records to Retireve:</label>
+                <input type="text" class="form-control" id="numberRecords" placeholder="1">
+            </div>
+            <div class="form-group">
+                <label for="startYear">Start Year:</label>
+                <input type="text" class="form-control" id="startYear" placeholder="YYYYMMDD">
+            </div>
+            <div class="form-group">
+                <label for="endYear">Start Year:</label>
+                <input type="text" class="form-control" id="endYear" placeholder="YYYYMMDD">
+            </div>
+            <button type="button" id="searchButton" class="btn btn-primary">Search</button>
+            <button type="button" id="clearResults" class="btn btn-primary">Clear Results</button>
+        </form>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header text-primary">
+                    <i class="fa fa-table"></i>
+                    <strong>Top Articles</strong>
+                        <div id="listContent">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
