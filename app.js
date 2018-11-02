@@ -43,5 +43,5 @@ throw err;
 })
  
 $('#clearResults').on('click', function () {
-$('listContent').empty();
+$('#listContent').empty();
 })
